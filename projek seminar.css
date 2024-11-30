@@ -1,0 +1,241 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: pink;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    background-color: #f46bab;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .menu li {
+    display: inline;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu a:hover {
+    color: #fa83bd;
+}
+
+.hero {
+    background: linear-gradient(to bottom, #d9b5d4, #e078b1);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: white;
+    color: #f1d8b1;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #91ddfa;
+    color: white;
+}
+
+.about {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ec5b9e;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ede3e3;
+}
+
+.seminar-list-container {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.seminar-list-container h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.seminar-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.seminar-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(229, 137, 180, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.seminar-item:hover {
+    transform: translateY(-5px);
+}
+
+.seminar-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.seminar-item h3 {
+    font-size: 24px;
+    margin: 15px;
+    color: #333;
+}
+
+.seminar-item p {
+    font-size: 16px;
+    color: #555;
+    margin: 15px;
+    line-height: 1.6;
+}
+
+.seminar-item .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f39c12;
+    margin: 15px;
+}
+
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #555;
+}
+
+footer {
+    background-color: #f8b9e2;
+    color: white;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1 1 30%;
+    padding: 10px;
+}
+
+.footer-section h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 5px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .navbar .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .about h2, .seminar-list-container h2, .contact h2 {
+        font-size: 28px;
+    }
+}
